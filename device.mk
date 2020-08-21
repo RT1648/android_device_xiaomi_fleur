@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service \
