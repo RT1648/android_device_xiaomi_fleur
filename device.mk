@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# In call service
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 # Binder
 PRODUCT_PACKAGES += \
     libhidltransport \
