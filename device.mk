@@ -70,6 +70,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
+# MediatekInCallServices
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
