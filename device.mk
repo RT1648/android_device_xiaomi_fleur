@@ -15,6 +15,18 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS := \
+	boot \
+	system \
+	vendor \
+	product \
+        vbmeta \
+        vbmeta_system
+
+
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
