@@ -155,6 +155,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
+# NFC
+PRODUCT_PACKAGES += \
+    NfcNci \
+    Tag \
+    android.hardware.nfc@1.2-service.pn8x \
+    com.android.nfc_extras
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
@@ -212,7 +219,12 @@ PRODUCT_PACKAGES += \
     miui.factoryreset.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.emmc
+     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.emmc
+
+PRODUCT_SOONG_NAMESPACES += \
+	$(LOCAL_PATH) \
+	hardware/xiaomi \
+    vendor/nxp/nfc
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
