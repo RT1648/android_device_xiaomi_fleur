@@ -164,6 +164,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/xiaomi
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils-v32
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.nonblocking_ffs=0 \
     persist.adb.nonblocking_ffs=0
