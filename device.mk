@@ -166,7 +166,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libutils-v32
+    libutils-v32 \
+    libcrypto-v32
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.nonblocking_ffs=0 \
