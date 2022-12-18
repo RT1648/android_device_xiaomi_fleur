@@ -133,7 +133,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
-    libdrm.vendor
+    libdrm.vendor \
+    libdrm
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V2-ndk.vendor
