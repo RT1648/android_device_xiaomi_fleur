@@ -226,6 +226,10 @@ PRODUCT_PACKAGES += \
     libkeymaster_portable.vendor \
     libpuresoftkeymasterdevice.vendor
 
+# KPOC
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
