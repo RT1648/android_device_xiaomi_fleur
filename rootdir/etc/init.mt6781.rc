@@ -1222,3 +1222,7 @@ on  property:vendor.elliptic.sensor.test=1
     start ellipticSensorTest
 on  property:vendor.elliptic.sensor.test=0
     stop ellipticSensorTest
+
+# Stop Serial Console
+on boot
+    stop console
