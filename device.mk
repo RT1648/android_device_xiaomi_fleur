@@ -134,6 +134,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     libdrm.vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.common-V2-ndk_platform.vendor \
+    android.hardware.graphics.common-V2-ndk.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
