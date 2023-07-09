@@ -302,6 +302,13 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/dtb.img:dtb.img
 
+# Runtine Device Name Overlays
+PRODUCT_PACKAGES += \
+    FleurSettingsProviderOverlay \
+    FleurpSettingsProviderOverlay \
+    MielSettingsProviderOverlay \
+    MielpSettingsProviderOverlay
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.insmod.sh \
