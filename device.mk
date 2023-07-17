@@ -124,6 +124,9 @@ PRODUCT_PACKAGES += \
     libflatbuffers-cpp.vendor \
     libfmq.vendor
 
+PRODUCT_PACKAGES += \
+    libdng_sdk.vendor
+
 # Cgroup
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
