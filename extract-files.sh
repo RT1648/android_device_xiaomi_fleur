@@ -85,8 +85,8 @@ function blob_fixup {
         vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
             "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
             ;;
-        vendor/lib*/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so)
-            "${PATCHELF}" --replace-needed "arm.graphics-V1-ndk_platform.so" "arm.graphics-V1-ndk.so" "${2}"
+	vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
+            sed -i 's/start/enable/' "$2"
             ;;
         vendor/lib64/hw/android.hardware.thermal@2.0-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
