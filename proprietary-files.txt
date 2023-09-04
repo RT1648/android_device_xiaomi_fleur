@@ -1680,14 +1680,10 @@ lib/vendor.trustonic.tee@1.0.so
 lib/vendor.trustonic.tee@1.1.so
 lib64/vendor.trustonic.tee@1.0.so
 lib64/vendor.trustonic.tee@1.1.so
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.beanpod.so
 vendor/lib/hw/gatekeeper.default.so
 vendor/lib/libTEECommon.so
 vendor/lib/libimsg_log.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/gatekeeper.beanpod.so
 vendor/lib64/hw/gatekeeper.default.so
 vendor/lib64/libTEECommon.so
