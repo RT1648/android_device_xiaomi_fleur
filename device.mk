@@ -50,8 +50,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     android.hidl.allocator@1.0 \
     android.hidl.memory.block@1.0 \
-    libhwbinder \
-    libhwbinder.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -85,15 +83,9 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libhwc2on1adapter.vendor \
-    libhwc2onfbadapter.vendor \
     libdrm.vendor \
     android.hardware.graphics.composer@2.1.vendor \
     android.hardware.graphics.composer@2.1-resources.vendor
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
 # Gnss
 PRODUCT_PACKAGES += \
@@ -258,51 +250,6 @@ PRODUCT_PACKAGES += \
     libruy.vendor \
 	libmemunreachable \
 	libmemunreachable.vendor
-
-# MTK Interfaces
-PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.apmonitor@2.0.vendor \
-    vendor.mediatek.hardware.atci@1.0.vendor \
-    vendor.mediatek.hardware.audio@6.1.vendor \
-    vendor.mediatek.hardware.camera.atms@1.0.vendor \
-    vendor.mediatek.hardware.camera.bgservice@1.0.vendor \
-    vendor.mediatek.hardware.camera.bgservice@1.1.vendor \
-    vendor.mediatek.hardware.camera.ccap@1.0.vendor \
-    vendor.mediatek.hardware.camera.frhandler@1.0.vendor \
-    vendor.mediatek.hardware.camera.isphal@1.0.vendor \
-    vendor.mediatek.hardware.camera.lomoeffect@1.0.vendor \
-    vendor.mediatek.hardware.camera.postproc@1.0.vendor \
-    vendor.mediatek.hardware.camera.security@1.0.vendor \
-    vendor.mediatek.hardware.clientapi@1.0.vendor \
-    vendor.mediatek.hardware.dmc@1.0.vendor \
-    vendor.mediatek.hardware.dmc@1.1.vendor \
-    vendor.mediatek.hardware.keymaster_attestation@1.0.vendor \
-    vendor.mediatek.hardware.keymaster_attestation@1.1.vendor \
-    vendor.mediatek.hardware.lbs@1.0.vendor \
-    vendor.mediatek.hardware.log@1.0.vendor \
-    vendor.mediatek.hardware.mdmonitor@1.0.vendor \
-    vendor.mediatek.hardware.mms@1.0.vendor \
-    vendor.mediatek.hardware.mms@1.1.vendor \
-    vendor.mediatek.hardware.mms@1.2.vendor \
-    vendor.mediatek.hardware.mms@1.3.vendor \
-    vendor.mediatek.hardware.mms@1.4.vendor \
-    vendor.mediatek.hardware.mms@1.5.vendor \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor \
-    vendor.mediatek.hardware.netdagent@1.0.vendor \
-    vendor.mediatek.hardware.nvram@1.0.vendor \
-    vendor.mediatek.hardware.nvram@1.1.vendor \
-    vendor.mediatek.hardware.nwk_opt@1.0.vendor \
-    vendor.mediatek.hardware.power@1.1.vendor \
-    vendor.mediatek.hardware.power@2.0.vendor \
-    vendor.mediatek.hardware.rcs@2.0.vendor \
-    vendor.mediatek.hardware.videotelephony@1.0 \
-    vendor.mediatek.hardware.videotelephony@1.0.vendor
-
-# Xiaomi Interfaces
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 
 # Wi-fi
 PRODUCT_PACKAGES += \
