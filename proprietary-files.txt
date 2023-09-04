@@ -1717,11 +1717,7 @@ vendor/etc/init/android.hardware.health@2.1-service.rc
 vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
 
 # IR
-vendor/bin/hw/android.hardware.ir@1.0-service
-vendor/etc/init/android.hardware.ir@1.0-service.rc
-vendor/lib/hw/android.hardware.ir@1.0-impl.so
 vendor/lib/hw/consumerir.default.so
-vendor/lib64/hw/android.hardware.ir@1.0-impl.so
 vendor/lib64/hw/consumerir.default.so
 
 # Keymaster
