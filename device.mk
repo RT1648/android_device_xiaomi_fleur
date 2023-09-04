@@ -118,6 +118,10 @@ PRODUCT_PACKAGES += \
     libkeymaster_portable.vendor \
     libpuresoftkeymasterdevice.vendor
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
