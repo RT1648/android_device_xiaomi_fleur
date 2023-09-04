@@ -105,6 +105,19 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    libkeymaster4.vendor \
+    libkeymaster41.vendor \
+    libkeymaster4_1support.vendor \
+    libkeymaster4support.vendor \
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor \
+    libpuresoftkeymasterdevice.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
