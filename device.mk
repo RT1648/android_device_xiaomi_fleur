@@ -178,11 +178,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# SEcure element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2-service.p73 \
-    android.hardware.secure_element@1.2-service.p73.xml
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
