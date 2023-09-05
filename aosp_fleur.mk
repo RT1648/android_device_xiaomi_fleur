@@ -8,14 +8,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from fleur device
 $(call inherit-product, device/xiaomi/fleur/device.mk)
 
 PRODUCT_DEVICE := fleur
-PRODUCT_NAME := lineage_fleur
+PRODUCT_NAME := aosp_fleur
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := fleur
 PRODUCT_MANUFACTURER := xiaomi
