@@ -25,7 +25,8 @@ AB_OTA_PARTITIONS := \
 	product \
         vbmeta \
         vbmeta_system
-
+        vbmeta_vendor \
+        dtbo
 
 PRODUCT_PACKAGES += \
     update_engine \
