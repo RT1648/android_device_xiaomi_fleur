@@ -121,7 +121,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # SELinux
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-include device/mediatek/sepolicy_vndr/SEPolicy.mk
+#include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
