@@ -24,7 +24,7 @@ AB_OTA_PARTITIONS := \
 	vendor \
 	product \
         vbmeta \
-        vbmeta_system
+        vbmeta_system \
         vbmeta_vendor \
         dtbo
 
@@ -284,6 +284,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/dtb.img:dtb.img
 
 # Rootdir
 PRODUCT_PACKAGES += \
