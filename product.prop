@@ -95,7 +95,6 @@ ro.miui.ui.version.name=V140
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.netflix.signup=1
 ro.opa.eligible_device=true
-ro.product.ab_ota_partitions=product
 ro.product.mod_device=fleur_global
 ro.product.product.cert=
 ro.product.product.marketname=
