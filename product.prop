@@ -75,7 +75,6 @@ ro.com.agoda.consumer.preload=/cust/etc/agoda.aid
 ro.com.android.dataroaming=false
 ro.com.google.acsa=true
 ro.com.google.gmsversion=13_202304
-ro.com.google.ime.system_lm_dir=product/usr/share/ime/google/d3_lms/
 ro.csc.spotify.music.partnerid=xiaomi_mobile
 ro.csc.spotify.music.referrerid=xiaomi_mobile
 ro.display.screen_type=1
