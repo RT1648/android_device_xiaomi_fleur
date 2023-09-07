@@ -124,6 +124,9 @@ VENDOR_SECURITY_PATCH := 2023-09-5
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
+# Manifest XML
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
 # SELinux
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 #include device/mediatek/sepolicy_vndr/SEPolicy.mk
