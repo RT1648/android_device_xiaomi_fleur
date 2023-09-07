@@ -70,10 +70,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MtkInCallService
 
-# FMRadio
-PRODUCT_PACKAGES += \
-    FMRadio
-
 # Binder
 PRODUCT_PACKAGES += \
     libhidltransport \

@@ -50,9 +50,6 @@ TARGET_OTA_ASSERT_DEVICE := fleur,miel,fleur_p,miel_p
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
-# FMRadio
-BOARD_HAVE_MTK_FM := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := fleur
 TARGET_NO_BOOTLOADER := true
