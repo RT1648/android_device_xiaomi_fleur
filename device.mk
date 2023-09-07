@@ -344,7 +344,6 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
     init.recovery.hardware.rc \
     init.recovery.mt6781.rc \
-    miui.factoryreset.rc \
 
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH) \
