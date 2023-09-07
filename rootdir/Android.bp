@@ -168,7 +168,10 @@ prebuilt_etc {
 
 // fstab
 prebuilt_etc {
-    name: "fstab.emmc",
-    src: "etc/fstab.emmc",
+    name: "fstab.mt6781",
+    src: "etc/fstab.mt6781",
     vendor: true,
+    ramdisk_available: true,
+
 }
+

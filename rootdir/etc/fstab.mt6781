@@ -6,18 +6,18 @@
 # 1 "<built-in>" 2
 # 1 "vendor/mediatek/proprietary/hardware/fstab/mt6781/fstab.in.mt6781" 2
 # 150 "vendor/mediatek/proprietary/hardware/fstab/mt6781/fstab.in.mt6781"
-system /system ext4 ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
-
-vendor /vendor ext4 ro wait,slotselect,avb,logical,first_stage_mount
-
-
-product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
-
+system                                                     /system                   ext4     ro             wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey,slotselect
+system_dlkm                                                /system_dlkm              ext4     ro             wait,avb,logical,first_stage_mount,slotselect
+system_ext                                                 /system_ext               ext4     ro             wait,avb,logical,first_stage_mount,slotselect
+vendor                                                     /vendor                   ext4     ro             wait,avb,logical,first_stage_mount,slotselect
+vendor_dlkm                                                /vendor_dlkm              ext4     ro             wait,avb,logical,first_stage_mount,slotselect
+odm                                                        /odm                      ext4     ro             wait,avb,logical,first_stage_mount,slotselect
+odm_dlkm                                                   /odm_dlkm                 ext4     ro             wait,avb,logical,first_stage_mount,slotselect
+product                                                    /product                  ext4     ro             wait,avb,logical,first_stage_mount,slotselect
 
 /dev/block/platform/bootdevice/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
 
 /dev/block/platform/bootdevice/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,flush_merge,reserve_root=134217,resgid=1065,alloc_mode=reuse,fsync_mode=nobarrier,inlinecrypt wait,check,formattable,quota,latemount,resize,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
-
 
 
 /dev/block/platform/bootdevice/by-name/rescue /cache ext4 noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable

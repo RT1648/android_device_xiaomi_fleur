@@ -314,7 +314,8 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
 
 PRODUCT_PACKAGES += \
-    fstab.emmc \
+    fstab.mt6781.ramdisk \
+    fstab.mt6781 \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
     factory_init.project.rc \
@@ -342,7 +343,7 @@ PRODUCT_PACKAGES += \
     miui.factoryreset.rc \
 
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.emmc
+     $(LOCAL_PATH)/rootdir/etc/fstab.mt6781:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6781
 
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH) \
