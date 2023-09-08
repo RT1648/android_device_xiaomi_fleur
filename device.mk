@@ -53,6 +53,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# ADB
+ifneq (eng, $(TARGET_BUILD_VARIANT))
+PRODUCT_SYSTEM_PROPERTIES += \
+     persist.sys.usb.config-adb
+
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.adb.secure=0
+endif
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
