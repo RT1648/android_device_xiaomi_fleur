@@ -173,7 +173,7 @@ PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_
 
 # SELinux
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-#include device/mediatek/sepolicy_vndr/SEPolicy.mk
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
