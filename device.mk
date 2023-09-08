@@ -157,6 +157,12 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libstagefright_foundation.vendor
 
+
+# Power/Perf configs
+PRODUCT_COPY_FILES += \
+    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/perf/*), \
+        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
