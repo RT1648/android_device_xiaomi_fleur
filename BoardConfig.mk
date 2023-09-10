@@ -175,3 +175,6 @@ include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
+
+# Firmware
+-include vendor/xiaomi/fleur-firmware/BoardConfigVendor.mk
