@@ -291,6 +291,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/dtb.img:dtb.img
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Runtine Device Name Overlays
 PRODUCT_PACKAGES += \
     FleurSettingsProviderOverlay \
