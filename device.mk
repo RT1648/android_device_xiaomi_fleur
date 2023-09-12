@@ -4,8 +4,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+VENDOR_PATH := vendor/xiaomi/fleur
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Include GSI keys
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
+
+# Dalvik configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
@@ -14,19 +23,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
-
-# A/B
-AB_OTA_UPDATER := true
-
-AB_OTA_PARTITIONS := \
-	boot \
-	system \
-	vendor \
-	product \
-        vbmeta \
-        vbmeta_system \
-        vbmeta_vendor \
-        dtbo
 
 PRODUCT_PACKAGES += \
     update_engine \
@@ -334,11 +330,6 @@ PRODUCT_PACKAGES += \
     init.recovery.hardware.rc \
     init.recovery.mt6781.rc \
 
-PRODUCT_SOONG_NAMESPACES += \
-	$(LOCAL_PATH) \
-	hardware/xiaomi \
-    vendor/nxp/nfc
-
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -349,6 +340,7 @@ PRODUCT_TARGET_VNDK_VERSION := 32
 PRODUCT_SOONG_NAMESPACES += \
    $(LOCAL_PATH)\
    hardware/xiaomi \
+   hardware/mediatek
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
