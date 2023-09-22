@@ -141,6 +141,12 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1.vendor \
     android.hardware.graphics.composer@2.1-resources.vendor
 
+# FMRadio
+BOARD_HAVE_MTK_FM := true
+PRODUCT_PACKAGES += \
+    libfmjni \
+    FMRadio
+
 # Gnss
 PRODUCT_PACKAGES += \
     android.hardware.gnss-service.mediatek
