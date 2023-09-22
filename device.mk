@@ -85,6 +85,10 @@ endif
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# BessLoudness
+PRODUCT_PACKAGES += \
+    BesLoudness
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
@@ -190,6 +194,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(foreach file,$(wildcard $(LOCAL_PATH)/configs/perf/*), \
         $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+
+# PowerOffAlarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
 
 # Memtrack
 PRODUCT_PACKAGES += \
