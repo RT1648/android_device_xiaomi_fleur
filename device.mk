@@ -5,6 +5,7 @@
 #
 
 VENDOR_PATH := vendor/xiaomi/fleur
+KERNEL_PATH := device/xiaomi/fleur-kernel
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -321,7 +322,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/dtb.img:dtb.img
+    $(KERNEL_PATH)/dtb.img:dtb.img
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
