@@ -88,6 +88,9 @@ function blob_fixup {
         vendor/lib*/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "arm.graphics-V1-ndk_platform.so" "arm.graphics-V1-ndk.so" "${2}"
             ;;
+        vendor/lib64/hw/android.hardware.thermal@2.0-impl.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 
