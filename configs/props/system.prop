@@ -73,7 +73,6 @@ pm.dexopt.post-boot=extract
 pm.dexopt.shared=speed
 qemu.hw.mainkeys=0
 ro.actionable_compatible_property.enabled=true
-ro.allow.mock.location=0
 ro.audio.silent=0
 ro.audio.usb.period_us=16000
 ro.base_build=noah
