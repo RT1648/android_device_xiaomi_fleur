@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_fleur.mk
+    $(LOCAL_DIR)/lineage_fleur.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_fleur-user \
-    aosp_fleur-userdebug \
-    aosp_fleur-eng
+    lineage_fleur-user \
+    lineage_fleur-userdebug \
+    lineage_fleur-eng
