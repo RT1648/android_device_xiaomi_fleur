@@ -45,6 +45,14 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
+# Common
+PRODUCT_PACKAGES += \
+    libtextclassifier_hash.vendor \
+    libruy.vendor \
+    libmemunreachable \
+    libmemunreachable.vendor \
+    libflatbuffers-cpp.vendor
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
