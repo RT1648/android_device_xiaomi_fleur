@@ -138,6 +138,10 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6781.rc \
     ueventd.mt6781.rc
 
+# SoundTrigger
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.3-impl
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
