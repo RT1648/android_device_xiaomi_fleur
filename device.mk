@@ -121,7 +121,8 @@ PRODUCT_PACKAGES += \
     libruy.vendor \
     libmemunreachable \
     libmemunreachable.vendor \
-    libflatbuffers-cpp.vendor
+    libflatbuffers-cpp.vendor \
+    libfmq.vendor
 
 # Display
 PRODUCT_PACKAGES += \
