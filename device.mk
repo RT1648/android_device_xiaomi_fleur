@@ -181,6 +181,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
+PRODUCT_PACKAGES += \
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
