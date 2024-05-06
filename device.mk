@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -113,6 +117,17 @@ PRODUCT_PACKAGES += \
     libmemunreachable \
     libmemunreachable.vendor \
     libflatbuffers-cpp.vendor
+
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.memtrack-service.mediatek-mali \
+    android.hardware.graphics.composer@2.1.vendor \
+    android.hardware.graphics.composer@2.1-resources.vendor
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    libdrm.vendor
 
 # fastbootd
 PRODUCT_PACKAGES += \
