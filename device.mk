@@ -194,6 +194,10 @@ PRODUCT_PACKAGES += \
     libkeymaster_portable.vendor \
     libpuresoftkeymasterdevice.vendor
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
+
 # MediatekInCallServices
 PRODUCT_PACKAGES += \
     MtkInCallService
