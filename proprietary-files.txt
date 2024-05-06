@@ -1465,7 +1465,6 @@ vendor/lib/mt6781/libdpframework.so
 vendor/lib/mt6781/libmtk_drvb.so
 vendor/lib/mt6781/libnir_neon_driver.so
 vendor/lib/mt6781/libpq_prot.so
-vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libFrameRecord.so
 vendor/lib/libNoFpsActor.so
@@ -1517,7 +1516,6 @@ vendor/lib64/mt6781/libdpframework.so
 vendor/lib64/mt6781/libmtk_drvb.so
 vendor/lib64/mt6781/libnir_neon_driver.so
 vendor/lib64/mt6781/libpq_prot.so
-vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
