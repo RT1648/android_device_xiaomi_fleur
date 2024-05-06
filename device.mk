@@ -74,6 +74,21 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     tinymix
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
+    audio.bluetooth.default \
+    libbluetooth_audio_session \
+    libldacBT_bco
+
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio@2.0.vendor \
+    android.hardware.bluetooth.audio@2.1.vendor \
+
 # CAS
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
