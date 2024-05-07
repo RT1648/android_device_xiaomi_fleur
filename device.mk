@@ -172,9 +172,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
-# fastbootd
+# Enable DM file pre-opting to reduce first boot time
+PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
+
+# Fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
 # Fingerprint
@@ -221,6 +223,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(LOCAL_PATH)/configs/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
+    $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
@@ -238,21 +247,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_sink
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
-    $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml
-
 # Improve performance
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 USE_DEX2OAT_DEBUG := false
-
-# Enable DM file pre-opting to reduce first boot time
-PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -307,7 +306,7 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
     libsfplugin_ccodec
-    libstagefright_foundation-v33 
+    libstagefright_foundation-v33
 
 # Media (OMX)
 PRODUCT_PACKAGES += \
@@ -447,8 +446,10 @@ PRODUCT_PACKAGES += \
     init.stnfc.rc \
     init_connectivity.rc \
     init.recovery.hardware.rc \
-    init.recovery.mt6781.rc \
     ueventd.mt6781.rc
+
+PRODUCT_PACKAGES += \
+    init.recovery.mt6781.rc
 
 # SoundTrigger
 PRODUCT_PACKAGES += \
@@ -505,7 +506,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
-    libwifi-hal-mt66xx \
     android.hardware.wifi@1.0-service-lazy
 
 PRODUCT_PACKAGES += \
