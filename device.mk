@@ -354,6 +354,7 @@ PRODUCT_PACKAGES += \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
