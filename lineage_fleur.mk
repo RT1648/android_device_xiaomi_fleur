@@ -19,10 +19,4 @@ PRODUCT_NAME := lineage_fleur
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := fleur
 PRODUCT_MANUFACTURER := xiaomi
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="fleur_phoneext4_global-user 13 TP1A.220624.014 V14.0.6.0.TKEMIXM release-keys"
-
-BUILD_FINGERPRINT := Xiaomi/fleur/fleur:13/TP1A.220624.014/V14.0.6.0.TKEMIXM:user/release-keys
