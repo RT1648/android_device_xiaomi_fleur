@@ -51,9 +51,9 @@ done
 
 function blob_fixup {
     case "$1" in
-        vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
+        vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             ;&
-        vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
+        vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/lib*/libmtkcam_stdutils.so)
