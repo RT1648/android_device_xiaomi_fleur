@@ -7,13 +7,6 @@
 // Init scripts
 
 prebuilt_etc {
-    name: "init.ago.rc",
-    src: "etc/init.ago.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.cgroup.rc",
     src: "etc/init.cgroup.rc",
     sub_dir: "init/hw",

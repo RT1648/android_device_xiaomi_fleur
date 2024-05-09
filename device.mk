@@ -470,7 +470,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6781 \
     fstab.mt6781.ramdisk \
-    init.ago.rc \
     init.cgroup.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
