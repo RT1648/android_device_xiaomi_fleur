@@ -145,8 +145,8 @@ on fs
     write /sys/kernel/mm/swap/vma_ra_enabled false
     write /proc/sys/vm/vfs_cache_pressure 130
     write /proc/sys/vm/dirty_writeback_centisecs 300
+    swapon_all /vendor/etc/fstab.mt6781
 
-    swapon_all /vendor/fstab.enableswap
 	#Thermal
     mkdir /data/vendor/.tp/ 0775 system system
     mkdir /data/vendor/thermal 0771 root system
