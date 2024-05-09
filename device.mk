@@ -314,7 +314,7 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx.vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libsfplugin_ccodec
+    libsfplugin_ccodec \
     libstagefright_foundation-v33
 
 # Media (OMX)
