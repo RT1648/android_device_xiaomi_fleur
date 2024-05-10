@@ -1970,6 +1970,14 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/wechat.beanpod.so
 
+# Kernel Modules (Init)
+vendor/etc/init/init.bt_drv.rc
+vendor/etc/init/init.connfem.rc
+vendor/etc/init/init.fmradio_drv.rc
+vendor/etc/init/init.gps_drv.rc
+vendor/etc/init/init.wlan_drv.rc
+vendor/etc/init/init.wmt_drv.rc
+
 # Media
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
