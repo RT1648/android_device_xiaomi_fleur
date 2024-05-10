@@ -73,7 +73,6 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
 
 PRODUCT_PACKAGES += \
-    libalsautils_legacy \
     libtinycompress \
     libtinyxml \
     tinymix
