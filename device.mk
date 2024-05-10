@@ -476,7 +476,6 @@ PRODUCT_PACKAGES += \
     init.sensor_1_0.rc \
     init.stnfc.rc \
     init_connectivity.rc \
-    init.recovery.hardware.rc \
     ueventd.mt6781.rc
 
 PRODUCT_PACKAGES += \
