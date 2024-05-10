@@ -538,6 +538,9 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service
 
 PRODUCT_PACKAGES += \
+    libwifi-hal-wrapper
+
+PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor
