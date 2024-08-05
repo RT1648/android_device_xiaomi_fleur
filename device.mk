@@ -128,7 +128,8 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
 
 PRODUCT_PACKAGES += \
-    libcamera_metadata_shim
+    libcamera_metadata_shim \
+    libbinder-v32
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
