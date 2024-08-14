@@ -108,6 +108,12 @@ function blob_fixup {
         vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc)
             echo "$(cat ${2}) input" > "${2}"
             ;;
+	vendor/etc/init/init.batterysecret.rc)
+            sed -i '/seclabel/d' "$2"
+	    ;;
+	vendor/etc/init/init.mi_thermald.rc)
+            sed -i '/seclabel/d' "$2"
+	    ;;
     esac
 }
 
