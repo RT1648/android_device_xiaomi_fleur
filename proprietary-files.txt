@@ -1,4 +1,4 @@
-# Unpinned blobs from fleur_phoneext4_global-user 13 TP1A.220624.014 V14.0.6.0.TKEMIXM release-keys
+# Unpinned blobs from missi_phoneext4_global-user 13 TP1A.220624.014 V816.0.2.0.TKEMIXM release-keys
 
 # AEE
 vendor/lib/libaedv.so
@@ -21,8 +21,8 @@ vendor/bin/atcid
 vendor/etc/init/atcid.rc
 
 # APDB
-vendor/etc/apdb/APDB_MT6785_S01__W2236
-vendor/etc/apdb/APDB_MT6785_S01__W2236_ENUM
+vendor/etc/apdb/APDB_MT6785_S01__W2248
+vendor/etc/apdb/APDB_MT6785_S01__W2248_ENUM
 
 # Audio
 vendor/bin/mt6660_calibration
@@ -1727,7 +1727,6 @@ vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/charon
-vendor/bin/em_hidl
 vendor/bin/gsm0710muxd
 vendor/bin/stfactorydemo-vendor
 vendor/bin/volte_imcb
@@ -1736,7 +1735,6 @@ vendor/bin/volte_md_status
 vendor/bin/volte_stack
 vendor/bin/volte_ua
 vendor/bin/xcap
-vendor/etc/init/em_hidl_user.rc
 vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
@@ -1983,7 +1981,7 @@ vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/vpud
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/vpud.rc
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
+vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/mtk_platform_codecs_config.xml
 vendor/lib/AVCSecureVdecCA.so
@@ -1996,7 +1994,6 @@ vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
-vendor/lib/libalacdec_mtk.so
 vendor/lib/libcapctrl.so
 vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_mtk_vdec.so
@@ -2020,7 +2017,6 @@ vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libmvpu_config_data.so
 vendor/lib/libstagefrighthw.so
-vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv.so
@@ -2310,12 +2306,3 @@ vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/libwapi.so
 vendor/lib64/libwifitest.so
 vendor/lib64/meta_wifi_data.so
-
-# Xiaomi (Charger)
-vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml
-vendor/lib/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
-vendor/lib/vendor.xiaomi.hardware.micharge@1.0.so
-vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
