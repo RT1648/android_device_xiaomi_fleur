@@ -18,7 +18,7 @@ $(call inherit-product, device/xiaomi/fleur/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1440
 
 PRODUCT_DEVICE := fleur
-PRODUCT_NAME := pb_fleur
+PRODUCT_NAME := aosp_fleur
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := fleur
 PRODUCT_MANUFACTURER := xiaomi

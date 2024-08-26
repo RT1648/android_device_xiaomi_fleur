@@ -5,9 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pb_fleur.mk
+    $(LOCAL_DIR)/aosp_fleur.mk
 
 COMMON_LUNCH_CHOICES := \
-    pb_fleur-user \
-    pb_fleur-userdebug \
-    pb_fleur-eng
+    aosp_fleur-eng
