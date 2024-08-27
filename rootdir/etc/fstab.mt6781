@@ -39,6 +39,7 @@ product                                                  /product               
 /dev/block/platform/bootdevice/by-name/gz2               /gz2                      emmc     defaults              defaults
 /dev/block/platform/bootdevice/by-name/spmfw             /spmfw                    emmc     defaults              defaults
 /dev/block/platform/bootdevice/by-name/audio_dsp         /audio_dsp                emmc     defaults              defaults
+/dev/block/by-name/pi_img                                /pi_img                   emmc     defaults              defaults
 /dev/block/platform/bootdevice/by-name/boot_para         /boot_para                emmc     defaults              defaults
 /dev/block/platform/bootdevice/by-name/dtbo              /dtbo                     emmc     defaults              defaults
 /dev/block/platform/bootdevice/by-name/otp               /otp                      emmc     defaults              defaults
