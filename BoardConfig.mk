@@ -70,6 +70,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := fleur_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/fleur
+BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)/prebuilts/*.ko)
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
