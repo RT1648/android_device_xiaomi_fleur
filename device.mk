@@ -70,6 +70,8 @@ PRODUCT_PACKAGES += \
     audio_policy.stub \
     libalsautils \
     libaudiofoundation.vendor \
+    libunwindstack.vendor \
+    libsqlite.vendor \
     libavservices_minijail.vendor \
 
 PRODUCT_PACKAGES += \
@@ -114,6 +116,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor
 
+PRODUCT_PACKAGES += \
+    libcamera_metadata.vendor \
+    libpng.vendor
+
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
@@ -155,6 +161,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V2-ndk.vendor
+
+PRODUCT_PACKAGES += \
+    libutilscallstack.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -205,6 +214,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss-V1-ndk.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libexpat.vendor
 
 # Health
 PRODUCT_PACKAGES += \
