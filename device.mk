@@ -292,6 +292,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/dtb.img:dtb.img
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
