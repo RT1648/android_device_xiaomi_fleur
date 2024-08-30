@@ -1687,8 +1687,6 @@ vendor/bin/hw/android.hardware.gnss-service.mediatek
 vendor/bin/starter
 vendor/bin/stroke
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
--vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mediatek.xml
--vendor/etc/vintf/manifest/gnss@2.1-service.xml:vendor/etc/vintf/manifest/gnss@2.1-mtk-service.xml
 vendor/etc/MNL_Config.xml
 vendor/etc/mpe.conf
 vendor/etc/slp_conf
