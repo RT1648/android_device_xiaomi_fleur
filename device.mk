@@ -129,8 +129,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim \
-    libbinder-v32 \
-    libhidlbase-v32
+    libbinder-v32
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
