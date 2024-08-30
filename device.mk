@@ -124,6 +124,9 @@ PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
     libpng.vendor
 
+PRODUCT_PACKAGES += \
+    libcamera2ndk_vendor
+
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
