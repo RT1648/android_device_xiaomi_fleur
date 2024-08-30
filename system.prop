@@ -1,7 +1,7 @@
 # Adb
 persist.service.adb.enable=1                                                    
 persist.service.debuggable=1
-persist.sys.usb.config=mtp,adb
+persist.sys.usb.config=adb
 
 # Atrace
 debug.atrace.tags.enableflags=0
