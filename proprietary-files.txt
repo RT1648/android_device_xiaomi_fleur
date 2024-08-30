@@ -1407,8 +1407,8 @@ vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 
-# Camera Feature Policy - from V14.0.6.0.TKEMIXM
-vendor/lib64/libmtkcam_featurepolicy.so|5c64cfdf0f7e51c85da6a82d7090802dbcb80c55
+# Camera Feature Policy - from V816.0.2.0.TKEMIXM
+vendor/lib64/libmtkcam_featurepolicy.so|11bedb3d0416dfd544fd56ee8fe806ff05563544
 
 # Camera-arcsoft
 vendor/lib64/libarcsoft_beautyshot.so
