@@ -482,6 +482,7 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6781.rc \
+    init.mt6781.power.rc \
     init.mt6781.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \

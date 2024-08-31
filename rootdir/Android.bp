@@ -28,6 +28,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.fingerprint.rc",
+    src: "etc/init.fingerprint.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.modem.rc",
     src: "etc/init.modem.rc",
     sub_dir: "init/hw",
@@ -37,6 +44,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.mt6781.rc",
     src: "etc/init.mt6781.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6781.power.rc",
+    src: "etc/init.mt6781.power.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
